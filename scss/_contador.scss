@@ -1,0 +1,141 @@
+// // Contador
+
+.contador {
+    padding: 10px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.contador h6 {
+    font-size: 14px;
+    color: burlywood;
+    margin: 10px auto 20px auto;
+}
+
+.contador h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin: 0 auto 60px auto;
+}
+
+.contador__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto {
+    display: none;
+}
+
+.contador__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contador__content span {
+    font-size: 52px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.contador__content p {
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 425px) {
+
+    .contador__content span {
+        font-size: 56px;
+        margin: 0 40px;
+    }
+    
+    .contador__content p {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (min-width: 540px) {
+
+    .contador__content span {
+        margin: 0 60px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .contador h2 {
+        font-size: 36px;
+    }
+
+    .punto {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+        
+    .contador__container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contador__content span {
+        margin: 0 40px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .contador {
+        padding: 40px 80px 100px 80px;
+    }
+
+    .contador h2 {
+        font-size: 42px;
+        margin-bottom: 80px;
+    }
+
+    .punto {
+        font-size: 46px;
+    }
+    
+    .contador__content span {
+        font-size: 64px;
+        margin: 0 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .contador {
+        padding: 40px 120px 100px 120px;
+    }
+    
+    .punto {
+        font-size: 52px;
+    }
+
+    .contador__content span {
+        margin: 0 80px;
+    }
+
+}

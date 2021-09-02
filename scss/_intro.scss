@@ -1,0 +1,145 @@
+// Intro
+
+.intro {
+    padding: 120px 40px;
+    background: black;
+}
+
+.intro h2 {
+    margin: 60px 0 80px 0;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    line-height: calc(font-size + 20px);
+}
+
+.accordion {
+    width: 100%;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.205);
+    margin-bottom: 40px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header .accordion-left {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-header .accordion-right i {
+    color: white;
+    font-size: 16px;
+}
+
+.accordion.active .accordion-header .accordion-right i {
+    transform: rotate(180deg);
+}
+
+.accordion-header .accordion-left h4 {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 6px;
+} 
+
+.accordion-header .accordion-left i {
+    font-size: 18px;
+    color: burlywood;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease max-height overflow;
+}
+
+.accordion.active .accordion-body {
+    max-height: 300px;
+    overflow: visible;
+}
+
+.accordion-body p {
+    font-size: 14px;
+    color: black;
+    margin-left: -16px;
+    margin-top: 10px;
+}
+
+.accordion.active .accordion-body p {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .intro {
+        padding: 120px 80px;
+    }
+    
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .accordion-header .accordion-right i {
+        font-size: 18px;
+    }
+    
+    .accordion-header .accordion-left h4 {
+        font-size: 18px;
+    } 
+    
+    .accordion-header .accordion-left i {
+        font-size: 20px;
+    }
+    
+    .accordion-body p {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .intro {
+        padding: 120px;
+    }
+    
+    .intro h2 {
+        font-size: 48px;
+        width: 94%;
+    }
+
+    .accordion-header .accordion-right i {
+        font-size: 20px;
+    }
+    
+    .accordion-header .accordion-left h4 {
+        font-size: 20px;
+    } 
+    
+    .accordion-header .accordion-left i {
+        font-size: 24px;
+    }
+    
+    .accordion-body p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .intro {
+        padding: 120px 200px;
+    }
+    
+    .intro h2 {
+        font-size: 52px;
+        width: 90%;
+    }
+
+}

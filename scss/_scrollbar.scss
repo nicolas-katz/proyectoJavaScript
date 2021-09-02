@@ -1,0 +1,12 @@
+// Scroll Bar
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border: 2px solid white;
+    border-radius: 24px;
+}

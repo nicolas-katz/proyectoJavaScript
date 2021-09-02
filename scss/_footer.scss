@@ -1,0 +1,610 @@
+// Footer
+
+// .footer {
+//     padding: 80px 20px 40px 20px;
+//     background: black;
+// }
+
+// .contacto {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-bottom: 50px;
+//     border-bottom: 0.3px solid rgba(255, 255, 255, 0.267);
+//     color: white;
+// }
+
+// .contacto__content h3 {
+//     font-size: 26px;
+//     line-height: 32px;
+//     font-weight: 700;
+//     letter-spacing: -1px;
+//     margin-bottom: 12px;
+//     text-align: center;
+// }
+
+// .contacto__content p {
+//     font-size: 14px;
+//     line-height: 18px;
+//     text-align: center;
+//     margin: 20px 0 30px 0;
+// }
+
+// .contacto__button button {
+//     width: 152px;
+//     height: 52px;
+//     font-size: 14px;
+//     border: white 2px solid;
+//     border-radius: 2px;
+//     color: white;
+//     background: transparent;
+//     font-weight: 600;
+//     transition: 1s;
+// }
+
+// .contacto__button button:hover {
+//     opacity: .6;
+// }
+
+// .links {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     padding: 60px 0;
+//     border-bottom: 0.3px solid rgba(255, 255, 255, 0.267);
+//     color: #fff;
+// }
+
+// .links__contenedor {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .links__nombre h4 {
+//     font-size: 36px;
+//     font-weight: 900;
+// }
+
+// .links__nav {
+//     margin: 0 25px;
+// }
+
+// .links__nav,
+// .links__soporte {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .links__nav h5,
+// .links__soporte h5,
+// .links__suscripcion h5 {
+//     font-size: 18px;
+//     font-weight: 600;
+//     margin-bottom: 20px;
+// }
+
+// .links__nav a,
+// .links__soporte a {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 14px;
+//     margin-bottom: 10px;
+//     transition: 1s;
+// }
+
+// .links__nav a:hover,
+// .links__soporte a:hover,
+// #openFooter:hover {
+//     color: #9E3FFD;
+// }
+
+// .links__suscripcion {
+//     margin-top: 60px;
+// }
+
+// .links__suscripcion__input {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .links__suscripcion__input input {
+//     width: 100%;
+//     height: 48px;
+//     padding: 16px;
+//     outline: none;
+//     border: 1px solid white;
+//     border-radius: 0;
+// }
+
+// .links__suscripcion__input input::placeholder {
+//     font-size: 14px;
+// }
+
+// .links__suscripcion__input button {
+//     height: 48px;
+//     border: 1px solid #9E3FFD;
+//     font-size: 24px;
+//     width: 58px;
+//     background: #9E3FFD;
+//     color: #fff;
+// }
+
+// .links__suscripcion__icons {
+//     margin-top: 32px;
+// }
+
+// .links__suscripcion__icons a {
+//     font-size: 14px;
+//     margin-right: 12px;
+//     color: white;
+//     transition: 1s;
+//     text-decoration: none;
+// }
+
+// .links__suscripcion__icons a:hover {
+//     opacity: .6;
+//     color: #9E3FFD;
+// }
+
+// .copyright {
+//     padding-top: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: white;
+// }
+
+// .copyright h6 {
+//     font-size: 12px;
+//     text-align: center;
+//     line-height: 18px;
+// }
+
+// .copyright a {
+//     color: #9E3FFD;
+//     text-decoration: none;
+// }
+
+// .copyright a:hover {
+//     text-decoration: underline;
+//     color: #9E3FFD;
+// }
+
+// @media only screen and (min-width: 425px) and (max-width: 539px) {
+
+//     .contacto__content h3 {
+//         font-size: 28px;
+//         line-height: 32px;
+//     }
+    
+//     .contacto__content p {
+//         font-size: 16px;
+//         line-height: 20px;
+//     }
+    
+//     .contacto__button button {
+//         width: 156px;
+//         height: 56px;
+//         font-size: 15px;
+//     }
+    
+//     .links__nav {
+//         margin: 0 50px;
+//     }
+    
+//     .links__suscripcion__input input {
+//         width: 100%;
+//         height: 52px;
+//         padding: 16px;
+//         outline: none;
+//         border: 1px solid white;
+//         border-radius: 0;
+//     }
+    
+//     .links__suscripcion__input input::placeholder {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion__input button {
+//         height: 52px;
+//         width: 60px;
+//     }
+
+// }
+
+// @media only screen and (min-width: 540px) and (max-width: 767px) {
+
+//     .contacto__content {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+    
+//     .contacto__content h3 {
+//         font-size: 28px;
+//         line-height: 32px;
+//         width: 90%;
+//     }
+    
+//     .contacto__content p {
+//         font-size: 16px;
+//         line-height: 20px;
+//         width: 90%;
+//     }
+    
+//     .contacto__button button {
+//         width: 156px;
+//         height: 56px;
+//         font-size: 16px;
+//     }
+    
+//     .links__nav {
+//         margin: 0 100px;
+//     }
+    
+//     .links__nav h5,
+//     .links__soporte h5,
+//     .links__suscripcion h5 {
+//         font-size: 20px;
+//     }
+    
+//     .links__nav a,
+//     .links__soporte a {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion__input input {
+//         width: 100%;
+//         height: 60px;
+//     }
+    
+//     .links__suscripcion__input input::placeholder {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion__input button {
+//         height: 60px;
+//         width: 68px;
+//     }
+    
+//     .links__suscripcion__icons a {
+//         font-size: 16px;
+//     }
+
+//     .copyright h6 {
+//         font-size: 14px;
+//         line-height: 20px;
+//     }
+
+// }
+
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+//     .contacto {
+//         flex-direction: row;
+//     }
+    
+//     .contacto__content h3 {
+//         font-size: 26px;
+//         line-height: 30px;
+//         text-align: left;
+//     }
+    
+//     .contacto__content p {
+//         font-size: 14px;
+//         line-height: 18px;
+//         text-align: left;
+//     }
+    
+//     .contacto__button button {
+//         width: 156px;
+//         height: 56px;
+//         margin-top: -20px;
+//         font-size: 16px;
+//     }
+    
+//     .links__nav {
+//         margin: 0 40px;
+//     }
+    
+//     .links__nav h5,
+//     .links__soporte h5,
+//     .links__suscripcion h5 {
+//         font-size: 18px;
+//     }
+    
+//     .links__nav a,
+//     .links__soporte a {
+//         font-size: 16px;
+//     }
+
+//     .links__suscripcion {
+//         margin-top: 0;
+//     }
+    
+//     .links__suscripcion__input input {
+//         width: 100%;
+//         height: 60px;
+//     }
+    
+//     .links__suscripcion__input input::placeholder {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion__input button {
+//         height: 60px;
+//         font-size: 26px;
+//         width: 64px;
+//     }
+
+        
+//     .links__suscripcion__icons a {
+//         font-size: 16px;
+//     }
+    
+//     .copyright h6 {
+//         font-size: 14px;
+//         line-height: 20px;
+//     }
+
+// }
+
+// @media only screen and (min-width: 992px) {
+    
+//     .footer {
+//         padding: 80px 80px 40px 80px;
+//     }
+    
+//     .contacto {
+//         flex-direction: row;
+//     }
+    
+//     .contacto__content h3 {
+//         font-size: 30px;
+//         line-height: 34px;
+//         text-align: left;
+//     }
+    
+//     .contacto__content p {
+//         font-size: 16px;
+//         line-height: 20px;
+//         text-align: left;
+//     }
+    
+//     .contacto__button button {
+//         width: 160px;
+//         height: 60px;
+//         font-size: 16px;
+//     }
+    
+//     .links__nav {
+//         margin: 0 75px;
+//     }
+    
+//     .links__nav h5,
+//     .links__soporte h5,
+//     .links__suscripcion h5 {
+//         font-size: 18px;
+//     }
+    
+//     .links__nav a,
+//     .links__soporte a {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion {
+//         margin-top: 0;
+//     }
+
+//     .links__suscripcion__input input {
+//         width: 100%;
+//         height: 60px;
+//     }
+    
+//     .links__suscripcion__input input::placeholder {
+//         font-size: 16px;
+//     }
+    
+//     .links__suscripcion__input button {
+//         height: 60px;
+//         font-size: 26px;
+//         width: 70px;
+//     }
+
+//     .links__suscripcion__icons a {
+//         font-size: 16px;
+//     }
+    
+//     .copyright h6 {
+//         font-size: 14px;
+//         line-height: 20px;
+//     }
+
+// }
+
+// @media only screen and (min-width: 1200px) {
+    
+//     .footer {
+//         padding: 80px 120px 40px 120px;
+//     }
+    
+//     .contacto__content h3 {
+//         font-size: 36px;
+//         line-height: 40px;
+//     }
+        
+//     .contacto__content p {
+//         font-size: 18px;
+//         line-height: 22px;
+//     }
+
+//     .links__nav {
+//         margin: 0 120px;
+//     }
+
+// }
+
+.footer {
+    padding: 40px 20px 80px 20px;
+    background: black;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    border-left: 6px solid burlywood;
+    margin-bottom: 40px;
+}
+
+.footer-cont1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.footer-cont1 a:hover {
+    color: white;
+}
+
+.footer-media {
+    margin-bottom: 12px;
+}
+
+.footer-media i {
+    font-size: 24px;
+    margin-right: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+.footer-cont2 h4 {
+    font-size: 24px;
+    color: white;
+}
+
+.footer-copyright {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright h6 {
+    color: white;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .footer-cont1 {
+        padding-left: 12px;
+        border-left: 8px solid burlywood;
+        margin-bottom: 0;
+    }
+
+    .footer-cont1 a {
+        font-size: 30px;
+    }
+    
+    .footer-media i {
+        font-size: 30px;
+    }
+    
+    .footer-cont2 h4 {
+        font-size: 30px;
+    }
+        
+    .footer-copyright h6 {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+ 
+    .footer {
+        padding: 40px 80px 80px 80px;
+    }
+    
+    .footer-cont1 a {
+        font-size: 34px;
+    }
+    
+    .footer-media i {
+        font-size: 34px;
+    }
+    
+    .footer-cont2 h4 {
+        font-size: 34px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+    .footer {
+        padding: 40px 120px 80px 120px;
+    }
+    
+    .footer-cont1 a {
+        font-size: 42px;
+    }
+    
+    .footer-media {
+        margin-bottom: 12px;
+    }
+    
+    .footer-media i {
+        font-size: 42px;
+        margin-right: 14px;
+    }
+    
+    .footer-cont2 h4 {
+        font-size: 42px;
+    }
+    
+    .footer-copyright h6 {
+        font-size: 14px;
+    }
+    
+}
+
+// Botón arriba
+
+.boton-arriba {
+    width: 52px;
+    height: 52px;
+    line-height: 55px;
+    text-align: center;
+    color: black;
+    background: #f7cc7f;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.boton-arriba:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 540px) {
+    .boton-arriba {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+}

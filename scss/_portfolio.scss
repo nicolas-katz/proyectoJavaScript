@@ -1,0 +1,219 @@
+// Portfolio
+
+.portfolio {
+    padding: 120px 20px;
+    overflow: hidden;
+    background: black;
+}
+
+.portfolio .portfolio-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio h6 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.portfolio h3 {
+    font-size: 32px;
+    line-height: calc(font-size + 20px);
+    margin: 20px 0 60px 0;
+    color: white;
+}
+
+.portfolio ul {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -30px;
+}
+
+.portfolio ul li {
+    list-style: none;
+    color: white;
+    margin: 10px 0;
+    margin-right: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #f7cc7f;
+    padding: 18px;
+    border-radius: 40px;
+    opacity: .5;
+}
+
+.portfolio ul .enlaces.activo,
+.portfolio ul .enlaces.activo :hover {
+    opacity: 1;
+}
+
+.portfolio .fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio .caja {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .caja img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.portfolio .caja i {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    padding: 16px;
+    border: white 1.2px solid;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 50%;
+    display: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.portfolio .caja:hover img {
+    opacity: .8;
+}
+
+.portfolio .caja:hover i {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .portfolio .caja {
+        width: 50%;
+        height: 500px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+
+    .portfolio {
+        padding: 120px 80px;
+    }
+    
+    .portfolio h6 {
+        font-size: 14px;
+    }
+    
+    .portfolio h3 {
+        font-size: 56px;
+        width: 50%;
+    }
+    
+    .portfolio ul li {
+        font-size: 16px;
+        padding: 18px;
+    }
+    
+    .portfolio .caja {
+        width: calc(33% + 2px);
+        height: 600px;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .portfolio {
+        padding: 120px;
+    }
+    
+}
+
+
+// Modal
+
+.modal-cont-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+    transition: 1s;
+}
+
+.showModal {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal-portfolio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-cont-portfolio .currentImage {
+    width: 280px;
+    height: 280px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+
+.modal-cont-portfolio i {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 540px) {
+    
+    .modal-cont-portfolio .currentImage {
+        height: 320px;
+        width: 320px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .modal-cont-portfolio .currentImage {
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .modal-cont-portfolio .currentImage {
+        width: 500px;
+        height: 500px;
+    }
+
+}

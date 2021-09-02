@@ -1,0 +1,25 @@
+// Reset CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+// Imports
+
+@import 'preloader';
+@import 'cursor';
+@import 'scrollbar';
+@import 'header';
+@import 'main';
+@import 'intro';
+@import 'datos';
+@import 'nosotros';
+@import 'contador';
+@import 'galeria';
+@import 'testimonios';
+@import 'portfolio';
+@import 'contacto';
+@import 'footer';

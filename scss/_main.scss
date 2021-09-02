@@ -1,0 +1,226 @@
+// Main
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 700px;
+}
+
+.mainPhoto {
+    background-image: url(../media/sobremi2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: none;
+    visibility: hidden;
+}
+
+.mainText {
+    background-image: url(../media/sobremi2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;    
+    width: 100%;
+    padding: 200px 20px 200px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText h6 {
+    font-size: 12px;
+    background: #f7cd7f4f;
+    padding: 8px;
+    font-weight: 600;
+    width: max-content;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    color: #f7cc7f;
+}
+
+.mainText h1 {
+    width: 90%;
+    color: white;
+    line-height: calc(font-size + 20px);
+    font-size: 40px;
+    text-align: center;
+}
+
+.mainText button {
+    width: 152px;
+    height: 52px;
+    margin-top: 30px;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    background: #f7cc7f;
+    color: black;
+}
+
+.mainText button span {
+    margin-left: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        height: 700px;
+    }
+
+    .mainPhoto {
+        display: block;
+        visibility: visible;
+    }
+    
+    .mainText {
+        padding: 200px 20px 200px 60px;
+        background-image: none;
+        background: black;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mainText h1 {
+        width: 90%;
+        font-size: 42px;
+        text-align: left;
+    }
+
+    .mainText button {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .mainText {
+        padding: 200px 20px 200px 100px;
+    }
+
+    .mainText h1 {
+        width: 80%;
+        font-size: 48px;
+    }
+
+    .mainText button {
+        width: 180px;
+        height: 58px;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .mainText {
+        padding: 200px 40px 200px 120px;
+    }
+    
+    .mainText h1 {
+        width: 80%;
+        font-size: 57px;
+    }
+    
+    .mainText button {
+        width: 186px;
+        height: 64px;
+    }
+
+}
+
+// Galería
+
+.galeria {
+    background: white;
+}
+
+.galeria-title {
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.galeria-title h6 {
+    color: burlywood;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.galeria-title h3 {
+    font-size: 36px;
+    color: black;
+    margin-top: 12px;
+}
+
+.owl-carousel {
+    padding: 0 20px 60px 20px;
+    overflow: hidden;
+}
+
+.owl-carousel .item {
+    position: relative;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .galeria-title h6 {
+        font-size: 14px;
+    }
+    
+    .galeria-title h3 {
+        font-size: 48px;
+        width: 60%;
+    }
+    
+    .owl-carousel .item img {
+        height: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .galeria-title {
+        padding: 60px 80px 20px 80px;
+    }
+    
+    .galeria-title h3 {
+        font-size: 52px;
+    }
+    
+    .owl-carousel .item img {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .galeria-title {
+        padding: 60px 120px 20px 120px;
+    }
+
+    .galeria-title h3 {
+        font-size: 56px;
+        width: 50%;
+    }
+
+}

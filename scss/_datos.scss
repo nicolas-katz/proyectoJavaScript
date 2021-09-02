@@ -1,0 +1,126 @@
+// Datos
+
+.datos {
+    padding: 60px 0;
+    background: black;
+}
+
+.datos-container {
+    background: rgba(0, 0, 0, 0.288);
+    background-image: url(../media/sobremi2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-container h2 {
+    font-size: 36px;
+    margin-bottom: 80px;
+    color: white;
+    text-align: center;
+}
+
+.datos-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% + 10px);
+}
+
+.barra {
+    font-size: 30px;
+    margin: 10px 0;
+    color: white;
+}
+
+.datos-subcontainer h4 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.datos-subcontainer h4 span {
+    color: rgb(197, 195, 195);
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .datos {
+        padding: 60px 20px;
+    }
+
+    .datos-container {
+        padding: 80px;
+    }
+    
+    .datos-container h2 {
+        font-size: 44px;
+        margin-bottom: 120px;
+    }
+    
+    .datos-subcontainer {
+        width: calc(100% + 25px);
+        flex-direction: row;
+    }
+
+    .datos-subcontainer h4 {
+        font-size: 22px;
+    }
+
+    .barra {
+        margin: 0 30px;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .datos {
+        padding: 60px 20px 160px 20px;
+    }
+
+    .datos-container {
+        padding: 120px;
+    }
+    
+    .datos-container h2 {
+        font-size: 48px;
+    }
+    
+    .datos-subcontainer {
+        width: calc(100% + 50px);
+    }
+    
+    .datos-subcontainer h4 {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .datos-container {
+        padding: 160px;
+    }
+    
+    .datos-container h2 {
+        font-size: 52px;
+    }
+    
+    .datos-subcontainer {
+        width: calc(100% + 100px);
+    }
+
+    .datos-subcontainer h4 {
+        font-size: 32px;
+    }
+
+}

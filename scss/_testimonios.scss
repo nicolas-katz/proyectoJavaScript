@@ -1,0 +1,149 @@
+// Clientes
+
+.clientes {
+    padding: 80px 20px;
+    background: white;
+}
+
+.clientes-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientes-title h6 {
+    font-size: 12px;
+    color: burlywood;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.clientes-title h3 {
+    font-size: 36px;
+    text-align: center;
+    line-height: calc(font-size + 20px);
+    color: black;
+}
+
+.clientes-container {
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.clientes-testimonios {
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(207, 207, 207);
+    padding: 30px 0;
+}
+
+.cliente-stars span {
+    font-size: 30px;
+    color: black;
+    margin-right: 8px;
+}
+
+.cliente-stars h4 {
+    color: rgb(87, 87, 87);
+    font-size: 16px;
+}
+
+.star {
+    margin: 10px 0 30px 0;
+}
+
+.star i {
+    margin-right: 4px;
+    font-size: 12px;
+    color: burlywood;
+}
+
+.cliente-text p {
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+}
+
+.cliente-text h5 {
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .clientes-title h6 {
+        font-size: 14px;
+    }
+    
+    .clientes-title h3 {
+        font-size: 42px;
+        width: 60%;
+    }
+    
+    .clientes-container {
+        padding: 30px 0;
+    }
+
+    .clientes-testimonios {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    
+    .cliente-stars span {
+        font-size: 36px;
+    }
+    
+    .cliente-stars h4 {
+        font-size: 18px;
+    }
+    
+    .star {
+        margin: 10px 0 0 0;
+    }
+    
+    .star i {
+        font-size: 14px;
+    }
+    
+    .cliente-text p {
+        font-size: 18px;
+    }
+    
+    .cliente-text h5 {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .clientes {
+        padding: 80px;
+    }
+    
+    .clientes-container {
+        padding: 30px 60px;
+    }
+    
+    .cliente-stars span {
+        font-size: 40px;
+    }
+
+    .star {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .clientes {
+        padding: 80px 120px;
+    }
+
+    .clientes-title h3 {
+        font-size: 52px;
+    }
+
+}

@@ -1,0 +1,103 @@
+.contactar {
+    padding: 80px 20px 160px 20px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactar h3 {
+    font-size: 36px;
+    line-height: calc(font-size + 20px);
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.contactar p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.contactar button {
+    width: 150px;
+    height: 56px;
+    margin-top: 40px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    background: #f7cc7f;
+    color: black;
+}
+
+.contactar button span {
+    margin-left: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .contactar h3 {
+        font-size: 48px;
+        width: 80%;
+    }
+    
+    .contactar p {
+        font-size: 15px;
+        width: 80%;
+    }
+    
+    .contactar button {
+        width: 160px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .contactar {
+        padding: 80px 80px 160px 80px;
+    }
+    
+    .contactar h3 {
+        font-size: 52px;
+        width: 70%;
+    }
+    
+    .contactar p {
+        font-size: 16px;
+        width: 70%;
+    }
+    
+    .contactar button {
+        width: 164px;
+        height: 64px;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .contactar {
+        padding: 80px 120px 160px 120px;
+    }
+    
+    .contactar h3 {
+        font-size: 56px;
+        width: 60%;
+    }
+
+    .contactar p {
+        width: 60%;
+    }
+    
+    .contactar button {
+        width: 170px;
+        height: 70px;
+    }
+
+}
