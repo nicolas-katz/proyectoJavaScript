@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // Animación del portfolio
+
     $(".enlaces").click(function(){
         let valor = $(this).attr("data-nombre");
         if(valor == "todos"){
@@ -13,6 +15,8 @@ $(document).ready(function(){
         })
     })
 
+    // Abrir modal de las imagenes del portfolio
+
     $(".fa-image").click(function(){
         let currentImage = $(this).siblings().attr("src");
         $(".modal-cont-portfolio .modal-portfolio .closeModal").css("opacity","1");        
@@ -22,6 +26,8 @@ $(document).ready(function(){
         $(".modal-cont-portfolio .modal-portfolio img").addClass("currentImage");
     })
 
+    // Cerrar modal de las imagenes del portfolio
+
     $("#cerrarModal").click(function(){
         $(".modal-cont-portfolio").removeClass("showModal");
         $(".modal-cont-portfolio .modal-portfolio img").remove();
@@ -29,7 +35,7 @@ $(document).ready(function(){
         $(".modal-cont-portfolio .modal-portfolio img").removeClass("currentImage");   
     })
 
-    // Galería
+    // Galería de imagenes con Owl Carousel
 
     $('.owl-carousel').owlCarousel({
         loop:true,
