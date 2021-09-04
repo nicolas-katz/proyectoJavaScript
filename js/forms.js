@@ -1,74 +1,48 @@
-// const btnEnviar = document.getElementById("enviar");
-// const inputName = document.getElementById("name");
-// const inputEmail = document.getElementById("email");
-// const textarea = document.getElementById("consulta");
+const form = document.querySelector('.form');
+const opcionesDelProcessBar = document.querySelectorAll('.progressbar__option');
 
-// usuarioStorage = localStorage.getItem("usuario");
-// function funcionStorage(){
-//     if (!usuarioStorage) {
-//         btnEnviar.addEventListener("click", function(){
-//             datosParaStorage = [{nombre: inputName.value, email: inputEmail.value}];
-//             localStorage.setItem("usuario", JSON.stringify(datosParaStorage));
-//         })
-//     } else {
-//         class Form {
-//             constructor (nombre, email, mensaje) {
-//                 this.nombre = nombre;
-//                 this.email = email;
-//                 this.mensaje = mensaje;
-//             }
-//         } 
-//         usuario = new Form (inputName.value, inputEmail.value);
-        
-        
-//         function guardarStorage(usuario) {
-        
-//             usuarioStorage = localStorage.getItem("usuario");
-//             if(!usuarioStorage){
-//                 datosForm.push(usuario);
-//                 localStorage.setItem("usuario", JSON.stringify(datosForm));
-//             } else {
-//                 datosForm = JSON.parse(usuarioStorage);
-//             }
-            
-//         }
-        
-//         let datosForm = [];
-        
-//         function imprimirValoresDelStorage(){
-        
-//             inputName.value = datosForm[0].nombre;
-//             inputEmail.value = datosForm[0].email;
-        
-//         }
-        
-//         guardarStorage(usuario);
-//         imprimirValoresDelStorage();
-    
-//     }
-    
-// }
+form.addEventListener('click', function(e) {
+    let elemento = e.target;
+    let btnContinuar = elemento.classList.contains('step__button--next');
+    let btnRegresar = elemento.classList.contains('step__button--back');
+    if (btnContinuar || btnRegresar) {
+        let stepActual = document.getElementById('step-' + elemento.dataset.step);
+        let proxStep = document.getElementById('step-' + elemento.dataset.to_step);
+        stepActual.addEventListener('animationend', function callback() {
+            stepActual.classList.remove('active');
+            proxStep.classList.add('active');
+            if (btnContinuar) {
+                stepActual.classList.add('to-left');
+                opcionesDelProcessBar[elemento.dataset.to_step - 1].classList.add('active');
+            } else {
+                proxStep.classList.remove('to-left');
+                opcionesDelProcessBar[elemento.dataset.step - 1].classList.remove('active');
+            }
+            stepActual.removeEventListener('animationend', callback);
+        });
+        stepActual.classList.add('inactive');
+        proxStep.classList.remove('inactive');
+    }
+});
 
-// if (usuarioStorage) {
-//     let nombreRegistrado = JSON.parse(usuarioStorage)[0].nombre;
-//     let emailRegistrado = JSON.parse(usuarioStorage)[0].email;
-        
-//     if (((nombreRegistrado.length || emailRegistrado.length) == 0)) {
-//         localStorage.removeItem("usuario");
-//     }
-// }
+const btnOpenModalFooter = document.getElementById("btnOpenModalFooter");
+const btnOpenModalHeader = document.getElementById("btnOpenModalHeader");
+const modalContainer = document.getElementById("modalContainer");
+const cerrarModal = document.querySelector(".cerrarModal");
 
-// funcionStorage();
+btnOpenModalFooter.addEventListener("click", ()=>{
+    modalContainer.classList.add("open");
+})
+btnOpenModalHeader.addEventListener("click", ()=>{
+    modalContainer.classList.add("open");
+})
 
-// const mensaje = document.querySelector(".mensajeDeEnvio");
-// btnEnviar.addEventListener("click", ()=>{
+cerrarModal.addEventListener("click", ()=>{
+    modalContainer.classList.remove("open");
+})
 
-//     if((inputName.value.length > 0) && (inputEmail.value.length > 0) && (textarea.value.length > 0)) {
-//         mensaje.innerText = "Se ha enviado correctamente";
-//     }
-// })
-
-// const form = document.querySelector(".contactame-form form");
-// mensaje.addEventListener("mouseover", ()=>{
-//     form.removeChild(mensaje);
-// })
+const enviarDatos = document.getElementById("enviarDatos");
+enviarDatos.addEventListener("click", ()=>{
+    alert(`Gracias por elegirnos! Tus datos se han enviado con exito. En breve se comunicarán con usted.`);
+    modalContainer.classList.remove("open");
+})
